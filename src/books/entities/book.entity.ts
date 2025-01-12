@@ -9,9 +9,6 @@ export class Book {
     @Column({ name: 'book_title' })
     title: string;
 
-    @Column({ name: 'book_year' })
-    year: number;
-
     @Column({ name: 'book_literary_genre' })
     literary_genre: string;
 
