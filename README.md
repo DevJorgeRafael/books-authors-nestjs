@@ -32,6 +32,10 @@
 $ pnpm install
 ```
 
+## Project setup
+
+Copy env.example and complete empty fields with your configuration
+
 ## Compile and run the project
 
 ```bash
