@@ -6,13 +6,13 @@ export class Author {
     @PrimaryGeneratedColumn({ name: 'author_id' })
     id: number;
     
-    @Column({ name: 'author_name', nullable: false })
+    @Column({ name: 'author_name' })
     name: string;
     
-    @Column({ name: 'author_lastname', nullable: false })
+    @Column({ name: 'author_lastname' })
     lastname: string;
     
-    @Column({ name: 'author_birthdate', nullable: false })
+    @Column({ name: 'author_birthdate' })
     birthDate: Date;
 
     @OneToMany(() => AuthorsBook, (authorsBooks) => authorsBooks.author)

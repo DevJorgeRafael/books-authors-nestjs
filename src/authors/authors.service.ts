@@ -22,7 +22,7 @@ export class AuthorsService {
     return this.authorRepository.find();
   }
 
-  findOne(id: number) {
+  findOne(id: number): Promise<Author> {
     return this.authorRepository.findOne({ where: { id } });
   }
 
